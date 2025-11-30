@@ -2,15 +2,14 @@
 
 - Node.js 20+, `pnpm`
 - Docker + Docker Compose (for the Postgres service in `backend/docker-compose.yml`)
-- A `.env` file with `DATABASE_URL=postgresql://...` (see `prisma/.env.example` if needed)
+- Environment variables are loaded from `.env.example` (copy it to `.env` with your own secrets when needed)
 
 ## Local development
 
 ```bash
-pnpm install
-docker compose up --build
-pnpm prisma migrate dev   # first launch: apply migrations
-pnpm start
+make init   # install deps, start Postgres, migrate, generate Prisma client
+make start  # run the API (use `make dev` for watch mode)
+make down   # stop Postgres container
 ```
 
 The API is available at `http://localhost:5433`.

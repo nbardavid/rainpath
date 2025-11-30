@@ -11,9 +11,7 @@ dist/
 build/
 .next/
 
-# Env files
 .env
-*.env
 
 # Logs
 logs/
