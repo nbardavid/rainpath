@@ -7,15 +7,7 @@
 
 ```bash
 pnpm install
-make dev
+pnpm run dev
 ```
 
-Open `http://localhost:3000` (or the port shown by Vite). Keyboard shortcuts:
-
-## make targets
-
-```bash
-make dev    # start Vite in dev/watch mode on port 3000
-make build
-make start  # rebuild and launch pnpm serve
-```
+Open `http://localhost:3000` (or the port shown by Vite). Use `pnpm run build` to create a production build and `pnpm run serve` to preview it locally.

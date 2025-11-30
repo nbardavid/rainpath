@@ -7,12 +7,11 @@
 ## Local development
 
 ```bash
-make init   # install deps, start Postgres, migrate, generate Prisma client
-make start  # run the API (use `make dev` for watch mode)
-make down   # stop Postgres container
+pnpm install
+pnpm run dev
 ```
 
-The API is available at `http://localhost:5433`.
+The `dev` script boots the Docker services defined in `docker-compose.yml`, runs pending Prisma migrations, generates the client, and then starts the Nest server. The API is available at `http://localhost:5433`. Use `pnpm run start` to launch the API without the extra setup steps or `pnpm run start:dev` for watch mode.
 
 ## API overview
 
