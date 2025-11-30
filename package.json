@@ -1,0 +1,12 @@
+{
+  "name": "rainpath",
+  "private": true,
+  "packageManager": "pnpm@10.23.0",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build"
+  },
+  "devDependencies": {
+    "turbo": "2.6.1"
+  }
+}

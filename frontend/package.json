@@ -3,13 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --port 3000",
+    "dev": "vite",
     "build": "vite build && tsc",
-    "serve": "vite preview",
-    "test": "vitest run",
-    "format": "biome format",
-    "lint": "biome lint",
-    "check": "biome check"
+    "serve": "vite preview"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
