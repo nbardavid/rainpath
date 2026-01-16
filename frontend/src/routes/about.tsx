@@ -12,6 +12,14 @@ export const Route = createFileRoute('/about')({
   component: AboutPage,
 })
 
+/**
+ * Render the About page describing Rainpath's motivation, architecture, and feature highlights.
+ *
+ * Includes an introductory card, a responsive grid of feature cards, an architecture overview,
+ * a dialog-based easter-egg trigger, and a navigation link back to the root page.
+ *
+ * @returns The About page React element.
+ */
 function AboutPage() {
   return (
     <main className="bg-[color-mix(in oklch,var(--background) 90%,var(--foreground))]">
